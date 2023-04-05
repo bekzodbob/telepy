@@ -14,3 +14,4 @@ For learning purposes only. The author do not reponsible for your stupid moves.
 - Put your telegram id to the variable TELEGRAM_USER_ID
 > TELEGRAM_USER_ID=1163891909 (this is my personal id do not f&cking write me motherf&cker!)
 - Build source code)
+> I do recommend using pyinstaller

